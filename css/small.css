@@ -1,0 +1,25 @@
+
+#container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.view img {
+    border-radius: 0;
+}
+
+aside.right, aside.left {
+    text-align: center;
+    float: inherit;
+    margin: 0;
+}
+
+#footer {
+    border-radius: 0;
+}
+
+aside.left img {
+    width: 10.94rem;
+    padding-top: 2rem;
+}
