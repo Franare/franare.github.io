@@ -1,0 +1,141 @@
+/* 
+* Estilos generales
+*/
+body{
+    background-color:  #EAF4FC;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* 
+* Estilos de la parte superior
+*/
+.superior{
+    height: 110px;
+}
+.logos img{
+    margin-left: 20px;
+    margin-top: 25px;
+    padding-right: 15px;
+    width: 130px;
+    height: 90px;  
+    float: left;  
+}
+
+.nombre h1{
+    float: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 8%;
+}
+
+/* 
+* Menu de navegacion
+*/
+header.menu{
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 60px;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid black;
+}
+
+header > ul{
+    display: flex;
+    justify-content: center;
+}
+
+.navegacion li{
+    margin: 0rem;
+}
+
+.navegacion li a{    
+    color: black;
+    border-right: 1px solid rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding: 10px 5px;
+    display: block;
+}
+
+.navegacion li a:hover{
+    background-color: #A20025;
+    color: white;
+}
+
+.navegacion > li{
+    float: left;
+    text-align: center;
+    min-width: 135px;
+}
+
+.navegacion li ul{
+    display: none;
+    position: absolute;
+    min-width: 135px;
+}
+
+.navegacion li:hover > ul{
+    display: block;
+}
+
+.navegacion li ul li{
+    position: relative;
+    background-color: white;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.navegacion li ul li ul{
+    right: -88px;
+    top: 0px
+}
+
+/* 
+* Cambio de pixeles
+*/
+@media only screen and (max-width: 808px ) {
+    .nombre h1{
+        margin-left: 0%;
+    }
+    .nombre {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 650px ) {
+    .nombre h1{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .nombre{
+        display: contents;
+    }
+}
+
+@media only screen and (max-width: 626px ) {
+    
+    header > ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navegacion > li{
+        text-align: center;
+        
+    }
+    .navegacion li a{  
+        border-right: none;  
+    }
+    header.menu{
+        height: 210px;
+    }
+}
